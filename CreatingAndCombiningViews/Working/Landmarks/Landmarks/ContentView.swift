@@ -13,13 +13,16 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 Text("Turtle Rock") // Using the UI inspector
                     .font(.title)
+                
                 HStack {
                     Text("Joshua Tree National Park")
                         .font(.subheadline)
+                    Spacer() // Use full width of the device
                     Text("California")
                         .font(.subheadline)
                 }
             }
+            .padding()
         }
             
     }
