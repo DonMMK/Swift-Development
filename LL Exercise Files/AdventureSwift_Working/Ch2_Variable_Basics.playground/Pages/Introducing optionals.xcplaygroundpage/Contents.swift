@@ -13,7 +13,11 @@
 
 */
 // Creating optionals
-
+var itemGathered: String? = "Pickaxe" // Optional can have variable or not/nill
+var isExchangable: Bool?
 
 // Forced unwrapping
+print(itemGathered!)
+//print(isExchangable!)
 
+// cmd and Right click -> Actions -> Quick help instead of full highlight and docs
