@@ -15,10 +15,14 @@
 
  */
 // Creating dictionaries
-
+var blacksmithShop: [String: Int] = ["Bottle":10,"Shield":15,"Ocarina":1000] // Side note of multi-dimensional array vs dictionary list
 
 // Accessing and modifying values
+blacksmithShop["Bottle"] = 11
 
+blacksmithShop["Towel"] = 1
+print(blacksmithShop)
 
 // All keys and values
-
+let allKeys = [String](blacksmithShop.keys) // WTF are keys?
+let allValues = [Int](blacksmithShop.values)

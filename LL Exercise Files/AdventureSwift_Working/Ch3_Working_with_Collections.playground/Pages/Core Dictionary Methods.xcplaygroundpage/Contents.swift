@@ -16,6 +16,7 @@ Dictionary elements can be easily updated and removed using subscript syntax or 
 
  */
 // Caching and overwriting items
+var playerStats: [String: Int] = ["HP": 100, "Attack":35,"Gold": 29]// Creating the dictionary
 
 
 // Caching and removing items
