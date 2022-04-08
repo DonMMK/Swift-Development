@@ -13,8 +13,8 @@
 
 */
 // Creating optionals
-var itemGathered: String? = "Pickaxe" // Optional can have variable or not/nill
-var isExchangable: Bool?
+var itemGathered: String? = "Pickaxe" // variable that is optional can have a value
+var isExchangable: Bool? // or not 
 
 // Forced unwrapping
 print(itemGathered!)
