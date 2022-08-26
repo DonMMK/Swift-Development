@@ -44,16 +44,5 @@ struct Vertex {
   /// Stores the Z coordinate of a vertex.
   var z: GLfloat
   
-  /// Stores the red color value of a vertex.
-  var r: GLfloat
-  
-  /// Stores the green color value of a vertex.
-  var g: GLfloat
-  
-  /// Stores the blue color value of a vertex.
-  var b: GLfloat
-  
-  /// Stores the alpha value of a vertex.
-  var a: GLfloat
   
 }

@@ -34,13 +34,13 @@ import GLKit
 
 /// Our subclass of GLKViewController to perform drawing, and logic updates using OpenGL ES.
 final class ViewController: GLKViewController {
-  
+
   /// Vertices array that stores 4 Vertex objects used to draw and color a square on screen.
   var Vertices = [
-    Vertex(x:  1, y: -1, z: 0, r: 1, g: 0, b: 0, a: 1),
-    Vertex(x:  1, y:  1, z: 0, r: 0, g: 1, b: 0, a: 1),
-    Vertex(x: -1, y:  1, z: 0, r: 0, g: 0, b: 1, a: 1),
-    Vertex(x: -1, y: -1, z: 0, r: 0, g: 0, b: 0, a: 1),
+    Vertex(x:  1, y: -1, z: 0),
+    Vertex(x:  1, y:  1, z: 0),
+    Vertex(x: -1, y:  1, z: 0),
+    Vertex(x: -1, y: -1, z: 0),
     ]
   
   /// Array used to store the indices in the order we want to draw the triangles of our square.
@@ -209,7 +209,6 @@ extension ViewController: GLKViewControllerDelegate {
     let aspect = fabsf(Float(view.bounds.size.width) / Float(view.bounds.size.height))
     let projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(65.0), aspect, 4.0, 10.0)
     effect.transform.projectionMatrix = projectionMatrix
-    
     var modelViewMatrix = GLKMatrix4MakeTranslation(0.0, 0.0, -6.0)
     rotation += 90 * Float(timeSinceLastUpdate)
     modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, GLKMathDegreesToRadians(rotation), 0, 0, 1)
